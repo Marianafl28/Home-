@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppies", sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background: rgb(194, 44, 194);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    background: rgb(153, 13, 228);
+    border-radius: 40px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    font-size: 2rem;
+    color: white;
+    padding: 0 10px;
+    margin: 0 20px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+
+nav ul li::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(224, 5, 220);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+
+nav ul li:hover::after{
+    width: 100%;
+}
